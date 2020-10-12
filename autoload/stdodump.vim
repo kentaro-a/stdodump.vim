@@ -1,13 +1,13 @@
 scriptencoding utf-8
 
-if exists('g:loaded_stdodump')
-	finish
+if !exists('g:loaded_stdodump')
+    finish
 endif
 let g:loaded_stdodump = 1
 
+let s:save_cpo = &cpo
 set cpo&vim
 
-" dump selected area into stdout
 function! stdodump#dumpTextIntoStdout (mode)
 	if a:mode == "v"
 		let [line_start, column_start] = getpos("'<")[1:2]
@@ -27,7 +27,8 @@ function! stdodump#dumpTextIntoStdout (mode)
 	endif
 endfunction
 
+
+
+
 let &cpo = s:save_cpo
 unlet s:save_cpo
-
-

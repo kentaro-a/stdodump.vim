@@ -1,7 +1,7 @@
 scriptencoding utf-8
 
 if exists('g:loaded_stdodump')
-	finish
+    finish
 endif
 let g:loaded_stdodump = 1
 
@@ -14,5 +14,3 @@ nnoremap <Space><Space>y :call stdodump#dumpTextIntoStdout('n')<CR>
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
-
-
