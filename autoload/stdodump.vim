@@ -1,3 +1,7 @@
+" Vim global plugin for dump text into stdout 
+" Last Change:	2020 Oct 12
+" Maintainer:	kentaro-a <minminzemi1121@yahoo.co.jp>
+
 scriptencoding utf-8
 
 if !exists('g:loaded_stdodump')
